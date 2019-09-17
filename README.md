@@ -1,7 +1,7 @@
 # 麻将游戏
 
 ## 配置
-> 新建数据库"MJ"  
+> 新建数据库"MJ",运行dbTool.py建表  
 > 修改config.py中数据库信息及服务器地址  
 > 修改clientConfig.py中的登陆服地址  
 
