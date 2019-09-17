@@ -1,13 +1,13 @@
 # 麻将游戏
 
 ## 配置
-> 新建数据库"MJ"
-> 修改config.py中数据库信息及服务器地址
-> 修改clientConfig.py中的登陆服地址
+> 新建数据库"MJ"  
+> 修改config.py中数据库信息及服务器地址  
+> 修改clientConfig.py中的登陆服地址  
 
 ## 运行
-> 分别在当前目录下运行server.bat,client.bat
-> 出牌或者决策选择输入对应序号并回车
+> 分别在当前目录下运行server.bat,client.bat  
+> 出牌或者决策选择输入对应序号并回车  
 ## 接口
 > 后续添加说明
  
@@ -18,7 +18,7 @@
 * 字牌：指风牌和箭牌，风牌为东、南、西、北。箭牌为中、发、白
 
 ## 番种
-> 简化国标番种规则，后续逐步完善
+> 简化国标番种规则，后续逐步完善  
 > 参考
 > * [规则](https://baike.baidu.com/item/中国麻将竞赛规则)
 > * [规则](https://baike.baidu.com/item/国标麻将/1287558?fr=aladdin)
@@ -97,6 +97,6 @@
 ### 胡牌基本类型：一对将+四句话
 
 ### 通信消息格式定义
-> json:["event":{args}] 
-> login,hall,game各自监听一个端口，使用socketserver为每个连接创建线程并维护各自的连接池，game中将逻辑实例化对象从init传入MyTCPHandler或直接实例化一个全局变量(socketserver.BaseRequestHandler)中
-> 客户端根据需要从服务器获取login,hall,game的address,创建和关闭socket，最多三个
+> json:["event":{args}]  
+> login,hall,game各自监听一个端口，使用socketserver为每个连接创建线程并维护各自的连接池，game中将逻辑实例化对象从init传入MyTCPHandler或直接实例化一个全局变量(socketserver.BaseRequestHandler)中  
+> 客户端根据需要从服务器获取login,hall,game的address,创建和关闭socket，最多三个  

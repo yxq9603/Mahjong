@@ -1,4 +1,4 @@
 @ECHO OFF
-start cmd /k python login.py
-start cmd /k python hall.py
-cmd /k python game.py
+start cmd /k python .server/login.py
+start cmd /k python .server/hall.py
+cmd /k python .server/game.py
